@@ -14,7 +14,7 @@
     const rule = [
         [/https:\/\/www\.curseforge\.com\/minecraft\/mc\-mods\/(?<id>[^\/]+).*/i, "https://www.curseforge.com/minecraft/mc-mods/{id}/files/all"],
         [/https:\/\/minecraft\.curseforge\.com\/projects\/(?<id>[^\/]+).*/i, "https://www.curseforge.com/minecraft/mc-mods/{id}/files/all"],
-        [/https:\/\/modrinth\.com\/mod\/(?<id>[^\/]+).*/i, "https://modrinth.com/mod/{id}/versions"],
+        [/https:\/\/(www\.)?modrinth\.com\/mod\/(?<id>[^\/]+).*/i, "https://modrinth.com/mod/{id}/versions"],
         [/https:\/\/github\.com\/(?<id>[^\/]+\/[^\/]+).*/i, "https://github.com/{id}/releases"],
     ];
     $(document).ready(() => {
